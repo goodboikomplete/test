@@ -1,0 +1,333 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	border: 2px solid black;
+}
+
+
+.circular--square{
+	border-radius: 50%;
+	
+	border: 5px solid #4b89ac;		
+}
+
+.leftbox{
+
+	width: 30%;
+	background: #feca07;
+}
+
+.mainbox{
+	width: 70%;
+	background-color:#2470a0;
+	padding: 40px;
+}
+
+.frame{
+	
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.recotxt1{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.mainreco{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.propos-space{
+	padding-bottom: 90px;
+}
+
+/*----------------------------TEXT ARRANGEMENT----------------------------------*/
+
+h1{
+	font-size: 45px;
+	font-family: "verdana";
+	font-size: 88px;
+	color: white;
+	font-weight: lighter;
+}
+
+h1 span{
+	color: #feca07;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 1.3em;
+
+}
+
+h3 span{
+	border-bottom: 1px solid #feca07;
+	padding-bottom: 5px;
+}
+
+h3{
+	padding-bottom: 10%;
+}
+
+
+body{
+	font-family: "verdana";
+}
+
+h4{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.bloc9 span{
+
+}
+
+p{
+	padding-top: 0;
+}
+
+.proposleft1, .proposleft2{
+	font-size: 0.9em;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+	color: white;
+}
+
+.proposleft2{
+	padding-bottom: 150%;
+}
+
+.propos, .contact, .loisirs {
+	color: white;
+	margin: 5px;
+	padding: 5px;	
+}
+
+.box-contact, .box-propos, .box-loisirs{
+	background-color: #404040;
+	text-align: center;
+}
+
+.name{
+	text-transform: uppercase;
+	font-size: 43px;
+
+}
+
+
+.formation, .experience, .reco{
+	
+	font-size: 1.5em;
+	padding-left: 25px;
+	
+}
+
+.mainbox1, .mainbox2{	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+
+.lilbox1, .lilbox2{
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+
+
+}
+
+.lilbox1{
+	padding-left: 0;
+}
+
+
+.mainbox{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.box-loisirs{
+	align-items: center;
+}
+
+.dateleft{
+	width: 30%;
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+.mentionright{
+	width: 70%;
+	text-align: left;
+}
+
+
+/*------------------------------ICON------------------------------------------*/
+
+.iconflex1, .iconflex2, .iconflex3{
+	display: flex; 
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid #feca07;
+}
+
+.fa-graduation-cap{
+	font-size: 45px; 
+}
+
+
+
+.fa-briefcase{
+	font-size: 45px; 
+	padding-left: 15px;
+}
+
+
+
+.fa-pencil-alt{
+	font-size: 45px; 	
+}
+
+.fa-apple, .fa-guitar, .fa-film{
+	font-size: 65px;
+	align-items: center;	
+}
+
+.experience{
+	margin-left: 7px;
+	padding-top: 5px;
+}
+
+.icon-loisirs{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 30px;
+}
+
+.fa-circle, .fa-circle-notch{
+	
+	position: relative;
+	color: #feca07;
+	top:39px;
+	font-size: 11px;
+}
+
+/*--------------------------MEDIA QUERIES---------------------------------------*/
+
+
+@media screen and (max-width: 1184px){
+	.frame
+	{
+		width: auto;
+	}
+	.container{
+	flex-direction: column;
+	width: auto; 
+	height: auto;
+
+	}
+
+	h4{
+		font-size: 12px;
+	}
+
+	.dateleft{
+		font-size: 10px;
+		padding: 0;
+	}
+
+	.fa-circle, .fa-circle-notch{
+		display: none;
+	}
+
+	.proposleft1{
+		text-align: center;
+	}
+
+	.leftbox, .container, .mainbox{
+		width: auto;
+		height: auto;	
+	}
+
+	.mainbox1, .mainbox2, .recotxt1{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mainbox{
+		padding-right: 30%;
+		padding-left: 30%;
+	}
+
+	.metier, .name, .formation-mq, .recoflex{
+		text-align: center;
+	}
+
+	.iconflex1, .iconflex2, .iconflex3{
+		font-size: 0.7em;
+		text-align: center;
+		display: flex;
+		align-content: center;
+	}
+
+	.formation, .experience, .reco{
+		text-align: center;
+	}
+
+	.reco-mq, .experience-mq, .formation-mq{
+	display: flex;
+	justify-content: center;
+	}
+
+	.dateleft, .mentionright{
+	text-align: center;
+	align-content: center;
+	width: auto;
+	}
+
+	.proposleft2{
+	padding-bottom: 1%;
+	}
+
+	.mainbox1{
+		border-bottom: 1px dotted black;
+		padding-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.mainbox, .container{
+		height: auto;
+	}
+
+	.mainbox{
+		padding: 5%;
+	}
+
+
+}
+
+
+
+
+
+
+
+
